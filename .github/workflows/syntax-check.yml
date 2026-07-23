@@ -17,6 +17,6 @@ jobs:
         run: |
           python -c "from pathlib import Path; p = Path('Transparentor.pyw'); compile(p.read_text(encoding='utf-8'), str(p), 'exec'); print('Syntax OK')"
       - name: Install smoke-test dependencies
-        run: python -m pip install numpy==2.4.6 Pillow==12.2.0 tkinterdnd2==0.4.4.1
+        run: python -m pip install numpy==2.4.6 opencv-python==4.13.0.92 Pillow==12.2.0 tkinterdnd2==0.4.4.1
       - name: Run release smoke tests
         run: python -m unittest discover -s tests -v
