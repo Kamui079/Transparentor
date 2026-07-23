@@ -33,6 +33,9 @@ jobs:
           else {
             "exists=false" >> $env:GITHUB_OUTPUT
           }
+          # A missing release is expected on the first publication. Clear the
+          # non-zero exit code left behind by `gh release view`.
+          exit 0
 
       - name: Set up Python
         if: steps.release.outputs.exists != 'true'
