@@ -1,0 +1,7 @@
+numpy==2.4.6
+onnxruntime-directml==1.24.4
+opencv-python==4.13.0.92
+Pillow==12.2.0
+PyMatting==1.1.15
+rembg==2.0.76
+tkinterdnd2==0.4.4.1

@@ -1,0 +1,45 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# PyInstaller and packaged binaries
+build/
+dist/
+*.exe
+*.msi
+*.zip
+
+# Generated output and local work
+debug_output/
+test_output/
+scratch/
+debug_*.png
+build_run.log
+build_run.err
+*.log
+*.err
+
+# Local development scripts and fixtures containing machine-specific paths
+compare_visuals.py
+debug_pipeline.py
+/test_*.py
+/test_*.spec
+protest.png
+swordtestimage.png
+ai_onboarding_guide.txt
+
+# Transparentor.py is a generated duplicate of the canonical .pyw entry point
+Transparentor.py
+
+# Local agent/editor metadata
+.agents/
+.codex/
+.vscode/
+.idea/
+
+# Operating-system clutter
+Thumbs.db
+Desktop.ini
+.DS_Store
